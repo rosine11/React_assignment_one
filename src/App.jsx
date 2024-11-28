@@ -1,43 +1,36 @@
 
 import React, { useEffect ,useState,useContext} from "react"
-import School from "./component/School";
+import Social from "./component/Social";
 import { createContext } from "react";
-import Explain from "./Explain";
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import Example from "./Example";
 export const Contexts = createContext()
 import './app.css'
-function Mystate() {
-  const [Name,setName]=useState("React javascript")
+function Myproject() {
+  const [Name]=useState("NIYIGENA jeannette")
   const [number, setNumber] = useState(0)
 
   return (
-    <fieldset>
-    <Router>
-      <a href="/explai"><button>CLICK HERE IF YOU WANT EXAMPLE OF REACT HOOKS</button></a><br /><br />
-      
+  
     <>
-    <Routes>
-      <Route path="/explain" element={<Explain />}/>
-      
-    </Routes>
+    <fieldset>
     <center>
-      <h1>WELCOME TO MY PROJECT</h1>
-      <button onClick={() => setNumber(number + 1)}>Increase</button>
-      <p>the number confirmed are:{number}</p>
-      <button onClick={() => setNumber(number - 1)}>Decrease</button>
+      <h1><u>WELCOME</u></h1>
+      <button onClick={() => setNumber(number + 1)}>Improve</button>
+      <p>the number are:{number}</p>
+      <button onClick={() => setNumber(number - 1)}>Reduce</button>
       <Contexts.Provider value={Name}>
-      <School/>
-      <Explain />
+      <Social/>
+      <Example />
       </Contexts.Provider>
     
     </center>
-    </>
-    </Router>
     </fieldset>
+    </>
+    
   )
 }
 
-export default Mystate;
+export default Myproject;
 
 
 

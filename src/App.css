@@ -1,4 +1,10 @@
 fieldset{
-  background-color: gray;
-  border-radius: 12px;
+  background-color: aqua;
+  width: 50%;
+  height: 45%;
+  border-radius: 20px;
+}
+h1{
+  font-size: 30px;
+  color: magenta;
 }

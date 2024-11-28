@@ -2,7 +2,7 @@
 import React,{useEffect,useState} from "react";
 import { Contexts } from "../App";
 import {useContext} from "react"
-var School = ()=>{
+var Social = ()=>{
   const number = useContext(Contexts)
 
     var [count,setCount]= useState(0)
@@ -12,19 +12,19 @@ var School = ()=>{
         
       }
       useEffect(()=>{
-        document.title = `the header is ${count} `
+        document.title =`${count} `
       },)
       return (
         <div>
-            <h1>increase is:{count} as header</h1>
+            <h1>increase is:{count}</h1>
             
-            <button onClick={HandleChange}>Increasing</button>
+            <button onClick={HandleChange}>Improve</button>
             
-            <h2>My favorite subject is:{number}</h2>
+            <h2>My name:{number}</h2>
             
     
         </div>
       )
     
 }
-export default School
+export default Social
